@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Садовый интсрумент</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href = "static/index.css" rel = "stylesheet">
+    <link type="text/css" href = "static/product/product.css" rel = "stylesheet">
+    <link type="text/css" href = "static/adaptability.css" rel = "stylesheet">
+    <link type="text/css" href = "static/adaptability-content.css" rel = "stylesheet">
+    <link type="text/css" href = "static/feedback.css" rel = "stylesheet">
+
+
+
+</head>
+<body>
+<div class="wrapper">
+    <!--    *******************************************HEADER-->
+    <header>
+        <div class="header_elements">
+            <div class="header_elements-left">
+                <div class="logo">
+                    <a class="link__logo-img" href="" >
+                        <img class="logo-img" src="static/logo.svg" alt="logo">
+                    </a>
+                    <a class="link__logo-name" href="">
+                        Садовый инструмент
+                    </a>
+                </div>
+
+
+                <div class="translation">
+                    <div class="select is-active">
+                        <div class="translation-language">RU</div>
+                        <img class="select-header" src="static/Vector.svg" alt="arrow">
+                        <div class="select-body">
+                            <div class="select-body-style">
+                                <form action="" method="post" class="select-item">
+                                    <input name="next" type="hidden" value="">
+                                    <select class="custom-select" name="language" style="display: none;">
+                                        <option value="">
+                                        </option>
+                                    </select>
+                                    <button type="submit" class="buttonLenguage">RU
+                                    </button>
+                                </form>
+                                <form action="" method="post" class="select-item">
+                                    <input name="next" type="hidden" value="">
+                                    <select class="custom-select" name="language" style="display: none;">
+                                        <option value="">
+                                        </option>
+                                    </select>
+                                    <button type="submit" class="buttonLenguage">EN
+                                    </button>
+                                </form>
+                                <form action="" method="post" class="select-item">
+                                    <input name="next" type="hidden" value="">
+                                    <select class="custom-select" name="language" style="display: none;">
+                                        <option value="">
+                                        </option>
+                                    </select>
+                                    <button type="submit" class="buttonLenguage">DE
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="header_elements-right">
+                <img src="static/header-phone.svg" alt="phone">
+                <div class="right-block">
+                    <a  href="tel:+78001205840">
+                        +7 800 120-58-40
+                    </a>
+                    <p class="right-block-text">Псков</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="burger-menu">
+            <div id="burger-menu_button" onclick="openMenu()">
+                <span id="burger-menu_line1"></span>
+                <span id="burger-menu_line2"></span>
+                <span id="burger-menu_line3"></span>
+            </div>
+
+            <nav id="burger-menu_nav">
+                <div class="logo">
+                    <a class="link__logo-img" href="" >
+                        <img class="logo-img" src="static/logo.svg" alt="logo">
+                    </a>
+                    <a class="link__logo-name" href="">
+                        Садовый инструмент
+                    </a>
+                </div>
+
+                <div>
+                    <div class="asideElement">
+                        <div class="catalog">
+                            <a href="#catalog" class="aside-link" onclick="closeMenu()">
+                                Каталог
+                            </a>
+                            <img class="catalog-burger-header" src="static/small-arrow.svg" alt="arrow" onclick="burgerCatalogSelect()">
+                        </div>
+                        <div class="catalog-burger-items">
+                            <a class="catalog-item" href="">— Лопаты</a>
+                            <a class="catalog-item" href="">— Грабли</a>
+                            <a class="catalog-item" href="">— Вилы</a>
+                            <a class="catalog-item" href="">— Для пчеловодства</a>
+                        </div>
+                    </div>
+
+                    <div class="asideElement">
+                        <a href="#cert" class="aside-link" onclick="closeMenu()">
+                            Патенты и лицензии
+                        </a>
+                    </div>
+
+                    <div class="asideElement">
+                        <a href="#news" class="aside-link" onclick="closeMenu()">
+                            Новости
+                        </a>
+                    </div>
+                    <div class="asideElement">
+                        <a href="#feedback" class="aside-link" onclick="closeMenu()">
+                            Обратная связь
+                        </a>
+                    </div>
+                    <div class="asideElement">
+                        <a href="#contacts" class="aside-link" onclick="closeMenu()">
+                            Контакты
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="mobile-header-right">
+            <div class="translation-mobile">
+                <div class="m-select m-is-active">
+                    <div class="m-translation-language">RU</div>
+                    <img class="m-select-header" src="static/small-arrow.svg" alt="arrow">
+                    <div class="m-select-body">
+                        <div class="m-select-body-style">
+                            <form action="" method="post" class="m-select-item">
+                                <input name="next" type="hidden" value="">
+                                <select class="custom-select" name="language" style="display: none;">
+                                    <option value="">
+                                    </option>
+                                </select>
+                                <button type="submit" class="buttonLenguage">RU
+                                </button>
+                            </form>
+                            <form action="" method="post" class="m-select-item">
+                                <input name="next" type="hidden" value="">
+                                <select class="custom-select" name="language" style="display: none;">
+                                    <option value="">
+                                    </option>
+                                </select>
+                                <button type="submit" class="buttonLenguage">EN
+                                </button>
+                            </form>
+                            <form action="" method="post" class="m-select-item">
+                                <input name="next" type="hidden" value="">
+                                <select class="custom-select" name="language" style="display: none;">
+                                    <option value="">
+                                    </option>
+                                </select>
+                                <button type="submit" class="buttonLenguage">DE
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="tel:+78001205840" class="mobile-icon">
+                <img src="static/mobile-header-phone.svg" alt="tel" class="mobile-header-img">
+            </a>
+        </div>
+
+
+
+    </header>
+
+
+    <script>
+        function openMenu() {
+            document.getElementById("burger-menu_button").classList.toggle('active');
+            document.getElementById("burger-menu_line1").classList.toggle('active');
+            document.getElementById("burger-menu_line2").classList.toggle('active');
+            document.getElementById("burger-menu_line3").classList.toggle('active');
+            document.getElementById("burger-menu_nav").classList.toggle('active');
+            document.querySelector("body").classList.toggle('active');
+            document.querySelector("header").classList.toggle('active-mobile-header');
+
+
+        }
+    </script>
+    <script>
+        function closeMenu() {
+            document.getElementById("burger-menu_button").classList.remove('active');
+            document.getElementById("burger-menu_line1").classList.remove('active');
+            document.getElementById("burger-menu_line2").classList.remove('active');
+            document.getElementById("burger-menu_line3").classList.remove('active');
+            document.getElementById("burger-menu_nav").classList.remove('active');
+            document.querySelector("body").classList.toggle('active');
+            document.querySelector("header").classList.remove('active-mobile-header');
+        }
+    </script>
+
+
+    <div class="main">
+            <!--    *******************************************SIDEBAR-->
+            <div class="aside">
+                <div id="aside-block">
+                    <nav>
+                        <div class="asideElement">
+                            <div class="catalog">
+                                <a href="#catalog" class="aside-link">
+                                    Каталог
+                                </a>
+                                <img class="catalog-header" src="static/Vector.svg" alt="arrow" onclick="catalogSelect()">
+                            </div>
+                            <div class="catalog-items">
+                                <a class="catalog-item" href="">— Лопаты</a>
+                                <a class="catalog-item" href="">— Грабли</a>
+                                <a class="catalog-item" href="">— Вилы</a>
+                                <a class="catalog-item" href="">— Для пчеловодства</a>
+                            </div>
+                        </div>
+
+                        <div class="asideElement">
+                            <a href="#cert" class="aside-link">
+                                Патенты и лицензии
+                            </a>
+                        </div>
+
+                        <div class="asideElement">
+                            <a href="#news" class="aside-link">
+                                Новости
+                            </a>
+                        </div>
+                        <div class="asideElement">
+                            <a href="#feedback" class="aside-link">
+                                Обратная связь
+                            </a>
+                        </div>
+                        <div class="asideElement">
+                            <a href="#contacts" class="aside-link">
+                                Контакты
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+
+
+            <!--    ************************************************** ТОВАР -->
+            <div class="content" >
+                <!--    ************************************************** хлебные крошки -->
+                <div class="bread-crumbs">
+                    <a href="" class="bread-crumb-link">
+                        Каталог
+                    </a>
+                    <p>
+                        /
+                    </p>
+                    <a href="" class="bread-crumb-link">
+                        Лопаты
+                    </a>
+                </div>
+
+                <!--    ************************************************** САМ ТОВАР -->
+                <div class="product-block">
+
+                    <div class="product-photos">
+                        <div class="main-photo-block">
+                            <img class="main-photo" src="static/lopata.jpg" alt="main-photo">
+                            <div class="video" >
+                                <iframe class="video-style" src="https://www.youtube.com/embed/KCJ4pdavu-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="other-photo">
+
+                            <img class="small-photo" src="static/lopata.jpg" alt="small-photo">
+                            <img class="small-photo" src="static/product/good-min2.jpg" alt="small-photo">
+                            <img class="small-photo" src="static/product/good-min3.jpg" alt="small-photo">
+                            <img class="small-photo" src="static/lopata.jpg" alt="small-photo">
+                            <div class="small-video" ></div>
+                        </div>
+                    </div>
+
+                    <div class="product-description">
+                        <div class="article">
+                            Арт. 81955972
+                        </div>
+                        <div class="product-title">
+                            Лопата штыковая Fiskars SolidTM 116см сталь с черенком
+                        </div>
+
+                        <!--    ************************************************** РЕЙТИНГ  -->
+                        <div class="box_star none-rating">
+                            <div class="rating rating_set">
+                                <div class="rating_body">
+                                    <div class="rating_active"></div>
+                                    <div class="rating_items">
+                                        <input type="radio" class="rating_item" value="1" name="rating">
+                                        <input type="radio" class="rating_item" value="2" name="rating">
+                                        <input type="radio" class="rating_item" value="3" name="rating">
+                                        <input type="radio" class="rating_item" value="4" name="rating">
+                                        <input type="radio" class="rating_item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating_value">{{avg_comment}}</div>
+                            </div>
+                            <div class="numb-review">
+                                5 отзывов
+                            </div>
+                        </div>
+                        <p class="porod-numb">
+                            В наличии: 5 шт
+                        </p>
+                        <p class="porod-numb">
+                            <span style="color: #4FAE3C;"> Самовывоз:</span> г. Псков, пл. Ленина, 94 в магазине selhozinstrument сегодня, бесплатно
+                        </p>
+
+
+
+                    </div>
+                </div>
+
+                <!--    ************************************************** ОПИСАНИЕ, ХАРАКТЕРИСТИКИ, ОТЗЫВЫ -->
+                <div class="info-block">
+                    <div class="info-block-titles">
+                        <div class="info-block-title-desc" onclick="selectDesc()">
+                            Описание
+                        </div>
+                        <div class="info-block-title-character" onclick="selectCharacter()">
+                            Характеристики
+                        </div>
+                        <div class="info-block-title-certif" onclick="selectCertif()">
+                            Сертификаты
+                        </div>
+                        <div class="info-block-title-extraInfo" onclick="selectExtraInfo()">
+                            Доп. информация
+                        </div>
+                        <div class="info-block-title-review" onclick="selectReview()">
+                            Отзывы
+                        </div>
+
+                    </div>
+
+
+                    <!--********************************************************* Раздел описание-->
+
+                    <div class="product-info-description">
+                        <div class="product-info-title">
+                            Описание
+                        </div>
+                        <div class="info-desc">
+                            Лопата штыковая Fiskars Solid используется при работе с грунтом  — для вскапывания и разрыхления земли. Удобство работы обеспечивает эргономичная рукоятка. Рабочая часть инструмента остроконечная, изготовлена из стали. Страна производства — Россия.
+                        </div>
+                    </div>
+
+                    <!--********************************************************* Раздел Характеристики-->
+                    <div class="product-info-character">
+                        <div class="product-info-title">
+                            Характеристики
+                        </div>
+                        <div class="info-desc characters">
+                            <div class="character">
+                                <p class="character-item">Материал ручки</p>
+                                <p class="character-item">Дерево</p>
+                            </div>
+                            <div class="character">
+                                <p class="character-item">Материал ручки</p>
+                                <p class="character-item">Дерево</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--********************************************************* Раздел Сертификаты-->
+                    <div class="product-info-certif">
+                        <div class="product-info-title">
+                            Сертификаты
+                        </div>
+                        <div class="info-desc certif">
+                            <img src="static/product/download.svg">
+                            <p>4607149847426 Отказное Письмо Ладога 18 октября 2021.pdf</p>
+                        </div>
+                    </div>
+
+                    <!--********************************************************* Доп информация-->
+                    <div class="product-info-extraInfo">
+                        <div class="product-info-title">
+                            Доп. информация
+                        </div>
+                        <div class="info-desc">
+                            Лопата штыковая Fiskars Solid используется при работе с грунтом  — для вскапывания и разрыхления земли. Удобство работы обеспечивает эргономичная рукоятка. Рабочая часть инструмента остроконечная, изготовлена из стали. Страна производства — Россия.
+                        </div>
+                    </div>
+
+
+    <!--                ********************************************************* Раздел БЛОК ОТЗЫВОВ-->
+                        <div class="product-info-review">
+                            <div class="product-info-title">
+                                Отзывы <span class="countOfReview">(5)</span>
+                            </div>
+
+
+                            <div class="review-block">
+                                <div class="rating-block-1">
+
+                                    <div class="product-rating">
+                                        <div class="rating-numb">
+                                            <p>4</p>
+                                            <img class="rating-star" src="static/product/star.svg" alt="star">
+                                        </div>
+                                        <div class="rating-text">
+                                            На основе 5 оценок
+                                        </div>
+                                    </div>
+                                    <button class="review-Button" type="submit" onclick="openReview()">Оставить отзыв</button>
+                                </div>
+
+                                <div class="user-comments">
+                                    <div class="user-comment">
+                                        <div class="comment-info">
+                                            <div class="rating-block-2">
+                                                <div class="comment-username">
+                                                    Руслан
+                                                </div>
+                                                <div class="comment-rating">
+                                                    <div class="box_star none-rating">
+                                                        <div class="rating rating_set">
+                                                            <div class="rating_body">
+                                                                <div class="rating_active"></div>
+                                                                <div class="rating_items">
+                                                                    <input type="radio" class="rating_item " value="1" name="rating">
+                                                                    <input type="radio" class="rating_item " value="2" name="rating">
+                                                                    <input type="radio" class="rating_item " value="3" name="rating">
+                                                                    <input type="radio" class="rating_item " value="4" name="rating">
+                                                                    <input type="radio" class="rating_item " value="5" name="rating">
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating_value">{{avg_comment}}</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-date">
+                                                3 января 2021
+                                            </div>
+                                        </div>
+                                        <div class="comment-text-block">
+                                            <div class="comment-text">
+                                                С инструментом данного бренда знаком давно, поэтому и приобрел данную лопату, так сказать по старой дружбе. После непродолжительной работы по перекопке целины, оторвался метал в месте сварного шва, где соединяется черенок с лопатой, вот лежит она уже год и не знаю что с ней делать, попробовать заварить или в металлолом сдать. В целом если земля не плотная и сильно не нагружать то прослужит долго.
+                                            </div>
+                                            <div class="comment-text">
+                                                Плюсы: л данную лопату, так о прослужит долго.
+                                            </div>
+                                            <div class="comment-text">
+                                                Минусы: л данную лопату, так о прослужит долго.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                </div>
+
+                <div class="info-block-mobile">
+                    <div>
+                        <div class="asideElement"onclick="descSelect()">
+                            <div class="mobile-block-title">
+                                <p>
+                                    Описание
+                                </p>
+                                <img class="mobile-desc-arrow" src="static/small-arrow.svg" alt="arrow">
+                            </div>
+                            <div class="mobile-desc-container">
+                                <p>
+                                    Лопата штыковая Fiskars Solid используется при работе с грунтом  — для вскапывания и разрыхления земли. Удобство работы обеспечивает эргономичная рукоятка. Рабочая часть инструмента остроконечная, изготовлена из стали. Страна производства — Россия.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="asideElement" onclick="characterSelect()">
+                            <div class="mobile-block-title" >
+                                <p>
+                                    Характеристики
+                                </p>
+                                <img class="mobile-character-arrow" src="static/small-arrow.svg" alt="arrow" >
+                            </div>
+                            <div class="mobile-character-container">
+                                <div class="info-desc characters">
+                                    <div class="character">
+                                        <p class="character-item">Материал ручки</p>
+                                        <p class="character-item">Дерево</p>
+                                    </div>
+                                    <div class="character">
+                                        <p class="character-item">Материал ручки</p>
+                                        <p class="character-item">Дерево</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="asideElement" onclick="certifSelect()">
+                            <div class="mobile-block-title" >
+                                <p>
+                                    Сертификаты
+                                </p>
+                                <img class="mobile-certif-arrow" src="static/small-arrow.svg" alt="arrow" >
+                            </div>
+                            <div class="mobile-certif-container">
+                                <div class="info-desc certif">
+                                    <img src="static/product/download.svg">
+                                    <p>4607149847426 Отказное Письмо Ладога 18 октября 2021.pdf</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="asideElement" onclick="extraInfoSelect()">
+                            <div class="mobile-block-title">
+                                <p>
+                                    Доп. Информация
+                                </p>
+                                <img class="mobile-extraInfo-arrow" src="static/small-arrow.svg" alt="arrow" >
+                            </div>
+                            <div class="mobile-extraInfo-container">
+                                <p>
+                                    Лопата штыковая Fiskars Solid используется при работе с грунтом  — для вскапывания и разрыхления земли. Удобство работы обеспечивает эргономичная рукоятка. Рабочая часть инструмента остроконечная, изготовлена из стали. Страна производства — Россия.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="asideElement" onclick="reviewSelect()">
+                            <div class="mobile-block-title" >
+                                <p>
+                                    Отзывы
+                                </p>
+                                <img class="mobile-review-arrow" src="static/small-arrow.svg" alt="arrow" >
+                            </div>
+                            <div class="mobile-review-container">
+                                <div class="product-rating">
+                                    <div class="rating-numb">
+                                        <img class="rating-star" src="static/product/star.svg" alt="star">
+                                        <p>4</p>
+                                    </div>
+                                    <div class="rating-text">
+                                        На основе 5 оценок
+                                    </div>
+                                </div>
+                                <button class="review-Button" type="submit" onclick="openReview()" >Оставить отзыв</button>
+                                <div class="user-comments">
+                                    <div class="user-comment">
+                                        <div class="comment-info">
+                                            <div class="comment-username">
+                                                <p>Руслан</p>
+                                            </div>
+                                            <div class="rating-block-2">
+                                                <div class="comment-rating">
+                                                    <div class="box_star none-rating">
+                                                        <div class="rating rating_set">
+                                                            <div class="rating_body">
+                                                                <div class="rating_active"></div>
+                                                                <div class="rating_items">
+                                                                    <input type="radio" class="rating_item " value="1" name="rating">
+                                                                    <input type="radio" class="rating_item " value="2" name="rating">
+                                                                    <input type="radio" class="rating_item " value="3" name="rating">
+                                                                    <input type="radio" class="rating_item " value="4" name="rating">
+                                                                    <input type="radio" class="rating_item " value="5" name="rating">
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating_value">{{avg_comment}}</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-date">
+                                                    <p>3 января 2021</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="comment-text-block">
+                                            <div class="comment-text">
+                                                С инструментом данного бренда знаком давно, поэтому и приобрел данную лопату, так сказать по старой дружбе. После непродолжительной работы по перекопке целины, оторвался метал в месте сварного шва, где соединяется черенок с лопатой, вот лежит она уже год и не знаю что с ней делать, попробовать заварить или в металлолом сдать. В целом если земля не плотная и сильно не нагружать то прослужит долго.
+                                            </div>
+                                            <div class="comment-text">
+                                                Плюсы: л данную лопату, так о прослужит долго.
+                                            </div>
+                                            <div class="comment-text">
+                                                Минусы: л данную лопату, так о прослужит долго.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal">
+                    <div class="modal-wrap">
+                        <div class="modal-content">
+                            <div class="modal-content-left">
+                                <img class="modal-img" src="static/product/good-min1.jpg">
+                                <button class="back-2 all-back" onclick="backPage2()">Назад</button>
+                                <button class="back-3 all-back" onclick="backPage3()">Назад</button>
+                                <button class="back-4 all-back" onclick="backPage4()">Назад</button>
+                            </div>
+                            <div class="modal-content-right">
+                                <div class="steps-titles">
+                                    <div class="step-1">
+                                        <p class="step">Шаг 1 из 4</p>
+                                        <p class="modal-title">Оценка товара</p>
+                                    </div>
+                                    <div class="step-2">
+                                        <p class="step">Шаг 2 из 4</p>
+                                        <p class="modal-title">Отзыв</p>
+                                    </div>
+                                    <div class="step-3">
+                                        <p class="step">Шаг 3 из 4</p>
+                                        <p class="modal-title">Фотографии товара</p>
+                                    </div>
+                                    <div class="step-4">
+                                        <p class="step">Шаг 4 из 4</p>
+                                        <p class="modal-title">Ваши данные</p>
+                                    </div>
+                                </div>
+                                <div class="pages">
+
+                                    <form >
+                                        <div class="page-1">
+                                            <p class="porod-numb extra-margin">
+                                                Поставьте товару от 1 до 5 звёзд
+                                            </p>
+                                            <div class="rating-block-2">
+                                                <div class="comment-rating">
+                                                    <div class="box_star">
+                                                        <div class="rating rating_set rating-modal">
+                                                            <div class="rating_body">
+                                                                <div class="rating_active"></div>
+                                                                <div class="rating_items">
+                                                                    <input type="radio" class="rating_item " value="1" name="rating">
+                                                                    <input type="radio" class="rating_item " value="2" name="rating">
+                                                                    <input type="radio" class="rating_item " value="3" name="rating">
+                                                                    <input type="radio" class="rating_item " value="4" name="rating">
+                                                                    <input type="radio" class="rating_item " value="5" name="rating">
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating_value">{{avg_comment}}</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="page-2">
+                                            <textarea name="text"  rows="1" id="comment" placeholder="Текст сообщения"
+                                                      onkeypress="auto_grow(this)"  onkeyup="auto_grow(this);"    class="form_comment" required></textarea >
+                                            <input type="text" name="name"  placeholder="Достоинства" class="reg-form_name" required>
+                                            <input type="text" name="name"  placeholder="Недостатки" class="reg-form_name" required>
+                                        </div>
+
+                                        <div class="page-3">
+                                            <div class="file-wrapper">
+                                                <input multiple name="user-file" type="file" id="upload-file__input_1">
+                                                <label class="upload-file__label" for="upload-file__input_1">
+                                                    <img class="send-file-img" src="static/product/send-file.svg" alt="send file">
+                                                    <span class="porod-numb">Для загрузки изображения нажмите на иконку</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="page-4">
+                                            <input type="text" placeholder="Имя *" class="reg-form_name" required>
+                                            <input type="email" placeholder="Электронная почта *" class="reg-form_name" required>
+                                        </div>
+
+                                        <button class="next-4 modal-button" onclick="sendForm()">Отправить</button>
+                                    </form>
+
+                                    <div>
+                                        <button class="next-1 modal-button" onclick="nextPage1()">Продолжить</button>
+                                        <div class="alert">
+                                            <p class="alert-text">Нажимая кнопку «Продолжить», я даю согласие на обработку персональных данных</p>
+                                        </div>
+                                    </div>
+
+                                    <button class="next-2 modal-button" onclick="nextPage2()">Продолжить</button>
+                                    <button class="next-3 modal-button" onclick="nextPage3()">Продолжить</button>
+                                </div>
+
+                                <div class="page-5">
+                                    <p>Ваш отзыв отправлен</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="close-modal" onclick="closeReview()"><img class="close-modal-img" src="static/product/modal-close.svg" alt="close"></button>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+        <div class="clear"></div>
+    </div>
+
+
+
+
+
+
+    <!--    *******************************************FOOTER-->
+    <footer>
+    <div class="footer-elements">
+        <div class="footerElement1">
+            <div class="footerElement1_1">
+                <div class="social_networks">
+                    <p>Мы в соцсетях:</p>
+                    <div class="social-net-Items">
+                        <a class="social-net-Item" href="" >
+                            <img class="social-net-img" src="static/vk.svg" alt="vk">
+                        </a>
+                        <a class="social-net-Item" href="" >
+                            <img class="social-net-img" src="static/ok.svg" alt="ok">
+                        </a>
+                        <a class="social-net-Item" href="" >
+                            <img class="social-net-img" src="static/fb.svg" alt="fb">
+                        </a>
+                        <a class="social-net-Item" href="" >
+                            <img class="social-net-img" src="static/inst.svg" alt="inst">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="linkBlock1">
+                    <a href="#cert" class="footer_link2">Патенты и лицензии</a>
+                    <a href="#news" class="footer_link2">НОВОСТИ</a>
+                    <a href="#feedback" class="footer_link1">ОБРАТНАЯ СВЯЗЬ</a>
+
+                </div>
+            </div>
+
+            <div class="followBlock">
+                <p>Подписаться на новости</p>
+                <div class="newsFollow">
+                    <input type="email" class="followEmail" name="Follow" placeholder="Введите ваш e-mail">
+                    <button type="submit" class="followButton">Подписаться
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footerElement2">
+            <div class="footer_catalog">
+                <a href="#catalog" class="footer_link3">
+                    КАТАЛОГ
+                </a>
+                <div class="light_catalog-elements">
+                    <a href="" class="footer_catalog-element">— Лопаты</a>
+                    <a href="" class="footer_catalog-element">— Вилы</a>
+                    <a href="" class="footer_catalog-element">— Грабли</a>
+                    <a href="" class="footer_catalog-element">— Для пчеловодства</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerElement3">
+            <div class="footer_contacts">
+                <a href="#contacts" class="footer_link4">Контакты</a>
+            </div>
+            <div class="footer_contact-elements">
+                <div class="contact_element">
+                    <p class="light_catalog-elements">
+                        Телефон в Пскове:
+                    </p>
+                    <a  href="tel:+78001205840">
+                        +7 800 120-58-40
+                    </a>
+                </div>
+                <div class="contact_element">
+                    <p class="light_catalog-elements">
+                        Электронная почта:
+                    </p>
+                    <a  href="mailto:selhozinstrument@mail.ru">
+                        selhozinstrument@mail.ru
+                    </a>
+                </div>
+                <div class="contact_element">
+                    <p class="light_catalog-elements">
+                        Адрес:
+                    </p>
+                    <p>
+                        Г. Псков, пл. Ленина, 94
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------- Мобильный футер-->
+    <div class="footer-mobile">
+        <div class="followBlock">
+            <p>Подписаться на новости</p>
+            <div class="newsFollow">
+                <input type="email" class="followEmail" name="Follow" placeholder="Введите ваш e-mail">
+                <button type="submit" class="followButton">Подписаться
+                </button>
+            </div>
+        </div>
+        <div class="social_networks">
+            <p>Мы в соцсетях:</p>
+            <div class="social-net-Items">
+                <a class="social-net-Item" href="" >
+                    <img class="social-net-img" src="static/vk.svg" alt="vk">
+                </a>
+                <a class="social-net-Item" href="" >
+                    <img class="social-net-img" src="static/ok.svg" alt="ok">
+                </a>
+                <a class="social-net-Item" href="" >
+                    <img class="social-net-img" src="static/fb.svg" alt="fb">
+                </a>
+                <a class="social-net-Item" href="" >
+                    <img class="social-net-img" src="static/inst.svg" alt="inst">
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <div class="asideElement">
+                <div class="catalog">
+                    <a href="#catalog" class="aside-link">
+                        Каталог
+                    </a>
+                    <img class="catalog-header-footer" src="static/small-arrow-2.svg" alt="arrow" onclick="Footer()">
+                </div>
+                <div class="catalog-items-footer">
+                    <a class="catalog-item" href="">— Лопаты</a>
+                    <a class="catalog-item" href="">— Грабли</a>
+                    <a class="catalog-item" href="">— Вилы</a>
+                    <a class="catalog-item" href="">— Для пчеловодства</a>
+                </div>
+            </div>
+
+            <div class="asideElement">
+                <a href="#contacts" class="aside-link" >
+                    Контакты
+                </a>
+                <div class="footer_contact-elements">
+                    <div class="contact_element">
+                        <p class="light_catalog-elements">
+                            Телефон в Пскове:
+                        </p>
+                        <a  href="tel:+78001205840">
+                            +7 800 120-58-40
+                        </a>
+                    </div>
+                    <div class="contact_element">
+                        <p class="light_catalog-elements">
+                            Электронная почта:
+                        </p>
+                        <a  href="mailto:selhozinstrument@mail.ru">
+                            selhozinstrument@mail.ru
+                        </a>
+                    </div>
+                    <div class="contact_element">
+                        <p class="light_catalog-elements">
+                            Адрес:
+                        </p>
+                        <p>
+                            Г. Псков, пл. Ленина, 94
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="asideElement">
+                <a href="#cert" class="aside-link">
+                    Патенты и лицензии
+                </a>
+            </div>
+
+            <div class="asideElement">
+                <a href="#news" class="aside-link" >
+                    Новости
+                </a>
+            </div>
+            <div class="asideElement">
+                <a href="#feedback" class="aside-link" >
+                    Обратная связь
+                </a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</div>
+
+<script src="static/product/product.js"></script>
+<script src="static/rating.js"></script>
+<script src="static/index.js"></script>
+</body>
+</html>
