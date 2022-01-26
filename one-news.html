@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" href = "static/index.css" rel = "stylesheet">
-  <link type="text/css" href = "static/one-news/one-news.css" rel = "stylesheet">
+  <link type="text/css" href = "static/one-news.css" rel = "stylesheet">
+  <link type="text/css" href = "static/adaptability-content.css" rel = "stylesheet">
+  <link type="text/css" href = "static/adaptability.css" rel = "stylesheet">
 </head>
 <body>
 <div class="wrapper">
@@ -24,88 +26,227 @@
 
 
         <div class="translation">
-
           <div class="select is-active">
-            <div class="translation-language">ru</div>
-
-
+            <div class="translation-language">RU</div>
             <img class="select-header" src="static/Vector.svg" alt="arrow">
             <div class="select-body">
               <div class="select-body-style">
-                <div class="select-item">ru</div>
-                <div class="select-item">en</div>
-                <div class="select-item">de</div>
+                <form action="" method="post" class="select-item">
+                  <input name="next" type="hidden" value="">
+                  <select class="custom-select" name="language" style="display: none;">
+                    <option value="">
+                    </option>
+                  </select>
+                  <button type="submit" class="buttonLenguage">RU
+                  </button>
+                </form>
+                <form action="" method="post" class="select-item">
+                  <input name="next" type="hidden" value="">
+                  <select class="custom-select" name="language" style="display: none;">
+                    <option value="">
+                    </option>
+                  </select>
+                  <button type="submit" class="buttonLenguage">EN
+                  </button>
+                </form>
+                <form action="" method="post" class="select-item">
+                  <input name="next" type="hidden" value="">
+                  <select class="custom-select" name="language" style="display: none;">
+                    <option value="">
+                    </option>
+                  </select>
+                  <button type="submit" class="buttonLenguage">DE
+                  </button>
+                </form>
               </div>
             </div>
           </div>
-
         </div>
+
+
       </div>
 
       <div class="header_elements-right">
-        <a class="basket" href="">
-          <img class="basket-img" src="static/shopping-cart.svg" alt="shopping-cart">
-          <div class="basket-text">Корзина</div>
-        </a>
-        <!--                <div class="login-reg-block">-->
-        <a class="basket" href="">
-          Зарегистрироваться
-        </a>
-        <a class="basket" href="">
-          Войти
-        </a>
-        <!--                </div>-->
+        <img src="static/header-phone.svg" alt="phone">
+        <div class="right-block">
+          <a  href="tel:+78001205840">
+            +7 800 120-58-40
+          </a>
+          <p class="right-block-text">Псков</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="burger-menu">
+      <div id="burger-menu_button" onclick="openMenu()">
+        <span id="burger-menu_line1"></span>
+        <span id="burger-menu_line2"></span>
+        <span id="burger-menu_line3"></span>
       </div>
 
+      <nav id="burger-menu_nav">
+        <div class="logo">
+          <a class="link__logo-img" href="" >
+            <img class="logo-img" src="static/logo.svg" alt="logo">
+          </a>
+          <a class="link__logo-name" href="">
+            Садовый инструмент
+          </a>
+        </div>
 
+        <div>
+          <div class="asideElement">
+            <div class="catalog">
+              <a href="#catalog" class="aside-link" onclick="closeMenu()">
+                Каталог
+              </a>
+              <img class="catalog-burger-header" src="static/small-arrow.svg" alt="arrow" onclick="burgerCatalogSelect()">
+            </div>
+            <div class="catalog-burger-items">
+              <a class="catalog-item" href="">— Лопаты</a>
+              <a class="catalog-item" href="">— Грабли</a>
+              <a class="catalog-item" href="">— Вилы</a>
+              <a class="catalog-item" href="">— Для пчеловодства</a>
+            </div>
+          </div>
 
+          <div class="asideElement">
+            <a href="#cert" class="aside-link" onclick="closeMenu()">
+              Патенты и лицензии
+            </a>
+          </div>
 
+          <div class="asideElement">
+            <a href="#news" class="aside-link" onclick="closeMenu()">
+              Новости
+            </a>
+          </div>
+          <div class="asideElement">
+            <a href="#feedback" class="aside-link" onclick="closeMenu()">
+              Обратная связь
+            </a>
+          </div>
+          <div class="asideElement">
+            <a href="#contacts" class="aside-link" onclick="closeMenu()">
+              Контакты
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-header-right">
+      <div class="translation-mobile">
+        <div class="m-select m-is-active">
+          <div class="m-translation-language">RU</div>
+          <img class="m-select-header" src="static/small-arrow.svg" alt="arrow">
+          <div class="m-select-body">
+            <div class="m-select-body-style">
+              <form action="" method="post" class="m-select-item">
+                <input name="next" type="hidden" value="">
+                <select class="custom-select" name="language" style="display: none;">
+                  <option value="">
+                  </option>
+                </select>
+                <button type="submit" class="buttonLenguage">RU
+                </button>
+              </form>
+              <form action="" method="post" class="m-select-item">
+                <input name="next" type="hidden" value="">
+                <select class="custom-select" name="language" style="display: none;">
+                  <option value="">
+                  </option>
+                </select>
+                <button type="submit" class="buttonLenguage">EN
+                </button>
+              </form>
+              <form action="" method="post" class="m-select-item">
+                <input name="next" type="hidden" value="">
+                <select class="custom-select" name="language" style="display: none;">
+                  <option value="">
+                  </option>
+                </select>
+                <button type="submit" class="buttonLenguage">DE
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="tel:+78001205840" class="mobile-icon">
+        <img src="static/mobile-header-phone.svg" alt="tel" class="mobile-header-img">
+      </a>
     </div>
   </header>
 
+  <script>
+    function openMenu() {
+      document.getElementById("burger-menu_button").classList.toggle('active');
+      document.getElementById("burger-menu_line1").classList.toggle('active');
+      document.getElementById("burger-menu_line2").classList.toggle('active');
+      document.getElementById("burger-menu_line3").classList.toggle('active');
+      document.getElementById("burger-menu_nav").classList.toggle('active');
+      document.querySelector("body").classList.toggle('active');
+      document.querySelector("header").classList.toggle('active-mobile-header');
+
+
+    }
+  </script>
+  <script>
+    function closeMenu() {
+      document.getElementById("burger-menu_button").classList.remove('active');
+      document.getElementById("burger-menu_line1").classList.remove('active');
+      document.getElementById("burger-menu_line2").classList.remove('active');
+      document.getElementById("burger-menu_line3").classList.remove('active');
+      document.getElementById("burger-menu_nav").classList.remove('active');
+      document.querySelector("body").classList.toggle('active');
+      document.querySelector("header").classList.remove('active-mobile-header');
+    }
+  </script>
 
   <div class="main">
     <!--    *******************************************SIDEBAR-->
     <div class="aside">
       <div id="aside-block">
+        <nav>
+          <div class="asideElement">
+            <div class="catalog">
+              <a href="#catalog" class="aside-link">
+                Каталог
+              </a>
+              <img class="catalog-header" src="static/Vector.svg" alt="arrow" onclick="catalogSelect()">
+            </div>
+            <div class="catalog-items">
+              <a class="catalog-item" href="">— Лопаты</a>
+              <a class="catalog-item" href="">— Грабли</a>
+              <a class="catalog-item" href="">— Вилы</a>
+              <a class="catalog-item" href="">— Для пчеловодства</a>
+            </div>
+          </div>
 
-        <div class="asideElement">
-          <div class="catalog">
-            <a href="" class="aside-link">
-              Каталог
+          <div class="asideElement">
+            <a href="#cert" class="aside-link">
+              Патенты и лицензии
             </a>
-            <img class="catalog-header" src="static/Vector.svg" alt="arrow" onclick="catalogSelect()">
           </div>
-          <div class="catalog-items">
-            <a class="catalog-item" href="">— Лопаты</a>
-            <a class="catalog-item" href="">— Грабли</a>
-            <a class="catalog-item" href="">— Вилы</a>
-            <a class="catalog-item" href="">— Для пчеловодства</a>
+
+          <div class="asideElement">
+            <a href="#news" class="aside-link">
+              Новости
+            </a>
           </div>
-        </div>
-
-        <div class="asideElement">
-          <a href="" class="aside-link">
-            Патенты и лицензии
-          </a>
-        </div>
-
-        <div class="asideElement">
-          <a href="" class="aside-link">
-            Новости
-          </a>
-        </div>
-        <div class="asideElement">
-          <a href="" class="aside-link">
-            Обратная связь
-          </a>
-        </div>
-        <div class="asideElement">
-          <a href="" class="aside-link">
-            Контакты
-          </a>
-        </div>
-
+          <div class="asideElement">
+            <a href="#feedback" class="aside-link">
+              Обратная связь
+            </a>
+          </div>
+          <div class="asideElement">
+            <a href="#contacts" class="aside-link">
+              Контакты
+            </a>
+          </div>
+        </nav>
       </div>
     </div>
 
@@ -122,31 +263,49 @@
         </a>
       </div>
 
-      <div class="title">
-        Временное закрытие!
-      </div>
+      <div class="one-news">
+        <div class="one-news-left">
+          <div class="news-title">
+            Временное закрытие!
+          </div>
+          <div class="one-news-date">
+            <p>
+              10.09.2021
+            </p>
+          </div>
+          <div class="new-text">
+            <p>
+              На фоне эпидемиологической обстановки магазин вынужден закрыться на период с 28.03.2020 до 30.04.2020.
+            </p>
+          </div>
+        </div>
 
-      <div class="one-news-date">
-        <p>
-          10.09.2021
-        </p>
+        <div class="one-news-right">
+          <img class="one-news-img" src="static/cat.jpg" alt="news-photo">
+        </div>
       </div>
 
       <div class="new-text">
-        <img class="one-news-img" src="static/one-news/one-news.png" alt="news-photo">
         <p>
-          На фоне эпидемиологической обстановки магазин вынужден закрыться на период с 28.03.2020 до 30.04.2020.
+          Некоторые победы в спорте – больше, чем спорт. Они становятся частью истории. Этот фильм – о самом драматичном и легендарном поединке в истории шахмат: матче за звание чемпиона мира между действующим чемпионом мира Анатолием Карповым и претендентом на этот титул – гроссмейстером Виктором Корчным, эмигрировавшем из СССР за несколько лет до этого матча. Схватка выдающихся шахматистов – прежде всего поединок характеров. Против юного гения, едва взлетевшего на шахматный Олимп, вундеркинда и идеалиста – закаленный боец, одержимый и непредсказуемый, готовый сражаться любым оружием: шахматы для него – война. Виртуозная игра, максимальная психологическая напряженность и личное, человеческое противостояние двух сильнейших шахматистов планеты. Цена победы в этом матче неизмеримо высока.
+        </p>
+        <p>
+          миологической обстановки магазин вынужден закрыться на период с 2агазин вынужден закрыться на период с 28.03.2020 до 30.04.2020.
         </p>
       </div>
 
+      <a href="" class="all-news-link" >
+        Все новости
+      </a>
+
+
+
+
 
 
 
 
       </div>
-
-
-
 
     </div>
 
@@ -161,65 +320,143 @@
 
 
   <!--    *******************************************FOOTER-->
-  <footer>
-    <div class="footer-elements">
-
-      <div class="footerElement1">
-
-        <div class="footerElement1_1">
-          <div class="social_networks">
-            <p>Мы в соцсетях:</p>
-            <div class="social-net-Items">
-              <a class="social-net-Item" href="" >
-                <img class="social-net-img" src="static/vk.svg" alt="vk">
-              </a>
-              <a class="social-net-Item" href="" >
-                <img class="social-net-img" src="static/ok.svg" alt="ok">
-              </a>
-              <a class="social-net-Item" href="" >
-                <img class="social-net-img" src="static/fb.svg" alt="fb">
-              </a>
-              <a class="social-net-Item" href="" >
-                <img class="social-net-img" src="static/inst.svg" alt="inst">
-              </a>
-            </div>
-          </div>
-
-          <div class="linkBlock1">
-            <a href="" class="footer_link1">ОБРАТНАЯ СВЯЗЬ</a>
-            <a href="" class="footer_link2">НОВОСТИ</a>
+<footer>
+  <div class="footer-elements">
+    <div class="footerElement1">
+      <div class="footerElement1_1">
+        <div class="social_networks">
+          <p>Мы в соцсетях:</p>
+          <div class="social-net-Items">
+            <a class="social-net-Item" href="" >
+              <img class="social-net-img" src="static/vk.svg" alt="vk">
+            </a>
+            <a class="social-net-Item" href="" >
+              <img class="social-net-img" src="static/ok.svg" alt="ok">
+            </a>
+            <a class="social-net-Item" href="" >
+              <img class="social-net-img" src="static/fb.svg" alt="fb">
+            </a>
+            <a class="social-net-Item" href="" >
+              <img class="social-net-img" src="static/inst.svg" alt="inst">
+            </a>
           </div>
         </div>
 
-        <div class="followBlock">
-          <p>Подписаться на новости</p>
-          <div class="newsFollow">
-            <input type="email" id="followEmail" name="Follow" placeholder="Введите ваш e-mail">
-            <button type="submit" id="followButton">Подписаться
-            </button>
-          </div>
+        <div class="linkBlock1">
+          <a href="#cert" class="footer_link2">Патенты и лицензии</a>
+          <a href="#news" class="footer_link2">НОВОСТИ</a>
+          <a href="#feedback" class="footer_link1">ОБРАТНАЯ СВЯЗЬ</a>
+
         </div>
       </div>
 
+      <div class="followBlock">
+        <p>Подписаться на новости</p>
+        <div class="newsFollow">
+          <input type="email" class="followEmail" name="Follow" placeholder="Введите ваш e-mail">
+          <button type="submit" class="followButton">Подписаться
+          </button>
+        </div>
+      </div>
+    </div>
 
-      <div class="footerElement2">
-        <div class="footer_catalog">
-          <a href="" class="footer_link3">
-            КАТАЛОГ
+
+    <div class="footerElement2">
+      <div class="footer_catalog">
+        <a href="#catalog" class="footer_link3">
+          КАТАЛОГ
+        </a>
+        <div class="light_catalog-elements">
+          <a href="" class="footer_catalog-element">— Лопаты</a>
+          <a href="" class="footer_catalog-element">— Вилы</a>
+          <a href="" class="footer_catalog-element">— Грабли</a>
+          <a href="" class="footer_catalog-element">— Для пчеловодства</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerElement3">
+      <div class="footer_contacts">
+        <a href="#contacts" class="footer_link4">Контакты</a>
+      </div>
+      <div class="footer_contact-elements">
+        <div class="contact_element">
+          <p class="light_catalog-elements">
+            Телефон в Пскове:
+          </p>
+          <a  href="tel:+78001205840">
+            +7 800 120-58-40
           </a>
-          <div class="light_catalog-elements">
-            <a href="" class="footer_catalog-element">— Лопаты</a>
-            <a href="" class="footer_catalog-element">— Вилы</a>
-            <a href="" class="footer_catalog-element">— Грабли</a>
-            <a href="" class="footer_catalog-element">— Для пчеловодства</a>
-          </div>
+        </div>
+        <div class="contact_element">
+          <p class="light_catalog-elements">
+            Электронная почта:
+          </p>
+          <a  href="mailto:selhozinstrument@mail.ru">
+            selhozinstrument@mail.ru
+          </a>
+        </div>
+        <div class="contact_element">
+          <p class="light_catalog-elements">
+            Адрес:
+          </p>
+          <p>
+            Г. Псков, пл. Ленина, 94
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!----------------------------------------------------- Мобильный футер-->
+  <div class="footer-mobile">
+    <div class="followBlock">
+      <p>Подписаться на новости</p>
+      <div class="newsFollow">
+        <input type="email" class="followEmail" name="Follow" placeholder="Введите ваш e-mail">
+        <button type="submit" class="followButton">Подписаться
+        </button>
+      </div>
+    </div>
+    <div class="social_networks">
+      <p>Мы в соцсетях:</p>
+      <div class="social-net-Items">
+        <a class="social-net-Item" href="" >
+          <img class="social-net-img" src="static/vk.svg" alt="vk">
+        </a>
+        <a class="social-net-Item" href="" >
+          <img class="social-net-img" src="static/ok.svg" alt="ok">
+        </a>
+        <a class="social-net-Item" href="" >
+          <img class="social-net-img" src="static/fb.svg" alt="fb">
+        </a>
+        <a class="social-net-Item" href="" >
+          <img class="social-net-img" src="static/inst.svg" alt="inst">
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="asideElement">
+        <div class="catalog">
+          <a href="#catalog" class="aside-link">
+            Каталог
+          </a>
+          <img class="catalog-header-footer" src="static/small-arrow-2.svg" alt="arrow" onclick="Footer()">
+        </div>
+        <div class="catalog-items-footer">
+          <a class="catalog-item" href="">— Лопаты</a>
+          <a class="catalog-item" href="">— Грабли</a>
+          <a class="catalog-item" href="">— Вилы</a>
+          <a class="catalog-item" href="">— Для пчеловодства</a>
         </div>
       </div>
 
-      <div class="footerElement3">
-        <div class="footer_contacts">
-          <a href="" class="footer_link4">Контакты</a>
-        </div>
+      <div class="asideElement">
+        <a href="#contacts" class="aside-link" >
+          Контакты
+        </a>
         <div class="footer_contact-elements">
           <div class="contact_element">
             <p class="light_catalog-elements">
@@ -245,11 +482,30 @@
               Г. Псков, пл. Ленина, 94
             </p>
           </div>
-
         </div>
       </div>
+
+      <div class="asideElement">
+        <a href="#cert" class="aside-link">
+          Патенты и лицензии
+        </a>
+      </div>
+
+      <div class="asideElement">
+        <a href="#news" class="aside-link" >
+          Новости
+        </a>
+      </div>
+      <div class="asideElement">
+        <a href="#feedback" class="aside-link" >
+          Обратная связь
+        </a>
+      </div>
     </div>
-  </footer>
+  </div>
+
+</footer>
+
 </div>
 
 

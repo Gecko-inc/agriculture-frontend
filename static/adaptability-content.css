@@ -5,6 +5,13 @@
         padding: 65px 0 30px;
         font-size: 32px;
     }
+    .one-news {
+        padding: 65px 0 40px;
+        font-size: 32px;
+    }
+    .news-title {
+        font-size: 32px;
+    }
 
 
 /*    Страница выбранного товара*/
@@ -24,7 +31,13 @@
     .characters {
         width: 100%;
     }
+    .one-news-left {
+        row-gap: 20px;
+    }
 
+    .news-bread-crumbs {
+        margin-top: 30px;
+    }
 
 
     }
@@ -43,6 +56,7 @@
     .review-Button {
         font-size: 16px;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -54,6 +68,21 @@
         padding: 45px 0 30px;
         font-size: 28px;
     }
+    .one-news {
+        padding: 45px 0 30px;
+        font-size: 28px;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .news-title {
+        font-size: 28px;
+    }
+    .news-bread-crumbs {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+
 
     /*    ----------------------------------------- Скролл */
     .showMore{
@@ -75,6 +104,7 @@
         /*box-shadow: 0 6px 10px 0 #B7CAD033;*/
         border-radius: 10px;
         /*border: 1px solid #E5E5E5;*/
+        gap: 20px;
     }
 
     .product {
@@ -102,8 +132,13 @@
         box-shadow: none;
     }
     .product-img {
-        width: 120px;
-        height: 120px;
+        /*width: 120px;*/
+        /*height: 120px;*/
+
+        width: 100%;
+        height: auto;
+        max-width: 120px;
+        max-height: 120px;
     }
 
     /*.products::-webkit-scrollbar {*/
@@ -125,15 +160,15 @@
     .products-list {
         display: grid;
         grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
-        gap: 30px;
+        gap: 20px;
     }
     .one-product {
         max-width: 600px;
         row-gap: 10px;
     }
     .one-product-img {
-        height: 120px;
-        width: 120px;
+        /*height: 120px;*/
+        /*width: 120px;*/
     }
     .one-product:hover {
         box-shadow: 0 6px 10px 0 rgba(99, 109, 113, 0.2);}
@@ -170,7 +205,6 @@
     }
     .news-img{
         min-width: 50px;
-        min-height: 50px;
     }
 
 
@@ -208,7 +242,8 @@
         gap: 25px;
     }
     .product-title {
-        font-size: 18px;
+        font-size: 16px;
+        word-break: break-word;
     }
 
     .product-info-title {
@@ -219,6 +254,9 @@
     }
     .porod-numb {
         font-size: 16px;
+    }
+    .product-photos {
+        gap: 20px;
     }
     .main-photo {
 
@@ -360,7 +398,7 @@
         height: 100%;
     }
     .rating {
-        font-size: 50px;
+        font-size: 45px;
     }
     .modal-content-right, .pages {
         height: 100%;
@@ -374,4 +412,114 @@
         flex-direction: column;
         justify-content: space-between;
     }
+
+
+
+
+/*    one news*/
+
+    .one-news-right {
+        max-width: 100%;
+    }
+    .one-news-left, .one-news {
+        row-gap: 20px;
+    }
+    .all-news-link {
+        width: 100%;
+        font-size: 16px;
+    }
+
 }
+
+@media screen and (max-width: 200px) {
+
+    .title, .news-title {
+        font-size: 18px;
+        word-break: break-word;
+    }
+    .block-news, .one-product, .footer-mobile {
+        word-break: break-word;
+    }
+    .followButton {
+        font-size: 12px;
+    }
+    .products-list {
+        grid-template-columns: 1fr;
+    }
+    .one-product-img {
+        height: auto;
+        width: 100%;
+    }
+    .product-title {
+        font-size: 14px;
+        word-break: break-word;
+    }
+    .products {
+        gap: 15px;
+    }
+    .one-product {
+        padding: 10px;
+    }
+    .mobile-header-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .logo {
+        flex-wrap: wrap;
+    }
+
+
+    .certif {
+        flex-wrap: wrap;
+    }
+    .rating {
+        font-size: 30px;
+        word-break: break-all;
+    }
+    .product-photos, .other-photo{
+        gap: 10px;
+    }
+    .other-photo {
+        padding-bottom: 0;
+    }
+    .small-photo, .small-video {
+        width: 100%;
+        height: auto;
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .product-description {
+        word-break: break-word;
+    }
+    .mobile-block-title,.footer-mobile, .buttonLenguage, .m-select, #burger-menu_nav.active, .catalog, .catalog-burger-items,
+    .porod-numb, .numb-review,
+    .mobile-desc-container.active, .mobile-character-container.active, .mobile-certif-container.active,
+    .mobile-extraInfo-container.active, .mobile-review-container.active, .review-Button, .user-comment, .comment-username, .modal-button, .all-backm
+    .one-news-date {
+        font-size: 14px;
+    }
+    .bread-crumbs {
+        font-size: 12px;
+        margin: 45px 0 30px 0;
+    }
+    .product-description {
+        gap: 15px;
+    }
+    .modal-title {
+        font-size: 16px;
+    }
+
+    .new-text{
+        font-size: 12px;
+    }
+    .all-news-link {
+        font-size: 12px;
+    }
+
+}
+

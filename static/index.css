@@ -184,14 +184,17 @@ header {
 }
 .product {
     cursor: pointer;
-    height: 220px;
     border: 1px solid #E5E5E5;
     padding: 5% 5% 5% 5%;
     display: flex;
     flex-direction: column;
     gap: 10%;
     width: inherit;
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
+    /*height: 220px;*/
+
+    justify-content: space-between;
+    height: auto;
     align-items: center;
     background-color: white;
     border-radius: 10px;
@@ -205,6 +208,8 @@ header {
 .product-img {
     max-width: 170px;
     max-height: 170px;
+    width: 100%;
+    height: auto;
 }
 .one-product-art {
     font-size: 14px;
@@ -250,8 +255,10 @@ header {
 }
 .one-product-img {
     justify-self: center;
-    height: 190px;
-    width: 190px;
+    /*height: 190px;*/
+    /*width: 190px;*/
+    height: auto;
+    width: 100%;
 }
 .one-product:hover {
     box-shadow: 0 6px 10px 0 rgba(99, 109, 113, 0.2);}
@@ -496,6 +503,7 @@ footer{
     font-family: inter;
     font-weight: 400;
     font-size: 14px;
+    word-break: break-all;
 }
 .followEmail {
     border-start-start-radius: 5px;
@@ -549,3 +557,9 @@ footer{
 .contact_element>a:hover{
     color: #6C786A;
 }
+
+
+
+
+
+

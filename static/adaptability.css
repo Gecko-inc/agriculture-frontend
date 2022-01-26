@@ -295,4 +295,7 @@
     .asideElement{
         word-break: break-word;
     }
+    .page-4.active {
+        width: 100%;
+    }
 }
