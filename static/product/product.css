@@ -653,4 +653,10 @@
     width: 60%;
 }
 
-
+.user-comment-photos {
+    margin-top: 20px;
+}
+.user-comment-photo {
+    max-width: 120px;
+    height: auto;
+}
