@@ -13,6 +13,13 @@
     <link type="text/css" href = "static/adaptability-content.css" rel = "stylesheet">
 
 
+    <link type="text/css" rel="stylesheet" href="node_modules/lightgallery/css/lightgallery.css" />
+    <!-- lightgallery plugins -->
+
+
+
+
+
 </head>
 <body>
 <div class="wrapper">
@@ -305,7 +312,7 @@
                     <div class="one-product">
                         <img class="one-product-img" src="static/cat.jpg" alt="product">
                         <p class="one-product-art">Арт. 81955972</p>
-                        <p class="one-product-desc">Лопата для земляных работ Fiskars SolidTM, 120 см сталь, с черенком работ Fiskars SolidTM, 120 см
+                        <p class="one-product-desc">Лопата для земляных работ Fiskars SolidTM, 120 см сталь, с черенком
                         </p>
 
 <!--                        <p class="one-product-price">816 ₽/шт </p>-->
@@ -387,34 +394,51 @@
 
 
             <!-- ------------------------------------------Сертификаты -->
-<!--            <section id="cert">-->
-<!--                <div class="title">-->
-<!--                    Патенты и лицензии-->
-<!--                </div>-->
+            <section id="cert">
+                <div class="title">
+                    Патенты и лицензии
+                </div>
 
-<!--                <div class="certificates">-->
-<!--                    <div class="certificate">-->
-<!--                        <p class="certificate-title">-->
-<!--                            SVG групп Сертификат ИСМ стр. SVG групп 20.03.2018-->
-<!--                        </p>-->
-<!--                        <img class="certificate-img" src="static/certificate/certificate.jpg" alt="certificate">-->
-<!--                    </div>-->
-<!--                    <div class="certificate">-->
-<!--                        <p class="certificate-title">-->
-<!--                            SVG групп Сертификат ИСМ стр. SVG групп 20.03.2018-->
-<!--                        </p>-->
-<!--                        <img class="certificate-img" src="static/certificate/certificate.jpg" alt="certificate">-->
-<!--                    </div>-->
-<!--                    <div class="certificate">-->
-<!--                        <p class="certificate-title">-->
-<!--                            SVG групп Сертификат ИСМ стр. SVG групп 20.03.2018-->
-<!--                        </p>-->
-<!--                        <img class="certificate-img" src="static/certificate/certificate.jpg" alt="certificate">-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div  class="certificates products-list">
+
+                    <a href="static/certificate.jpg" class=certificate-img">
+                        <img src="static/certificate.jpg" alt="Сертификат ИСМ стр. SVG групп 20.03.2018"/>
+                        <p class="certificate-text">Сертификат ИСМ стр. SVG групп 20.03.2018</p>
+                    </a>
+                    <a href="static/certificate.jpg" class="certificate-img">
+                        <img src="static/certificate.jpg" alt="Сертификат ИСМ стр. SVG групп 20.03.2018"/>
+                        <p class="certificate-text">Сертификат ИСМ стр. SVG групп 20.03.2018</p>
+                    </a>
+                    <a href="static/certificate.jpg" class="certificate-img">
+                        <img src="static/certificate.jpg" alt="Сертификат ИСМ стр. SVG групп 20.03.2018"/>
+                        <p class="certificate-text">Сертификат ИСМ стр. SVG групп 20.03.2018</p>
+                    </a>
+
+                </div>
+
+                <div class="scrollGoods">
+                    <button type="submit" class="showMore">Показать еще</button>
+                    <div class="scroll">
+                        <div class="number-page">
+                            <div class="this-page">
+                                1
+                            </div>
+                            <div class="all-page">
+                                из 24
+                            </div>
+                        </div>
+                        <a href="" class="leftLink">
+                            <img src="static/product/scroll-left.svg" alt="left" >
+                        </a>
+                        <a href="" class="rightLink">
+                            <img src="static/product/scroll-right.svg" alt="right" >
+                        </a>
+                    </div>
+                </div>
 
 
-<!--            </section>-->
+
+            </section>
 
 
             <!-- ------------------------------------------NEWS -->
@@ -768,5 +792,26 @@
     };
     var mask = IMask(element, maskOptions);
 </script>
+
+
+
+<script src="node_modules/lightgallery/lightgallery.min.js"></script>
+<!-- lightgallery plugins -->
+<script>
+    lightGallery(document.querySelector('.certificates'), {
+            thumbnail:true,
+            animateThumb: true,
+            zoomFromOrigin: true,
+            allowMediaOverlap: true,
+            toggleThumb: true,
+            enableSwipe: true,
+            escKey: true,
+            getCaptionFromTitleOrAlt: true,
+            startAnimationDuration: 400,
+            startClass: "lg-start-zoom",
+        }
+    );
+</script>
+
 </body>
 </html>

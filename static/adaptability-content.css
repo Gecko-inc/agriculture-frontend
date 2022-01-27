@@ -194,7 +194,7 @@
 
     }
     .block-news{
-        font-size: 14px;
+        font-size: 16px;
         max-width: 600px;
         display: flex;
         flex-direction: column;
@@ -230,7 +230,7 @@
         word-break: break-word;
     }
     .contact-info {
-        font-size: 18px;
+        font-size: 16px;
         word-break: break-word;
     }
     .contacts-block {
@@ -283,6 +283,7 @@
         gap: 10px;
     }
     .bread-crumbs{
+        font-size: 16px;
         word-break: break-word;
     }
 
@@ -302,9 +303,10 @@
     }
     .mobile-desc-container.active, .mobile-character-container.active, .mobile-certif-container.active, .mobile-extraInfo-container.active, .mobile-review-container.active {
         display: block;
-        margin-top: 20px;
+        padding-bottom: 20px;
         font-size: 16px;
         font-weight: 400;
+
     }
 
     .mobile-desc-arrow, .mobile-character-arrow, .mobile-certif-arrow, .mobile-extraInfo-arrow, .mobile-review-arrow {
@@ -316,6 +318,8 @@
     }
 
     .mobile-block-title {
+        padding: 20px 0;
+        font-size: 16px;
         display: flex;
         font-weight: 500;
         flex-direction: row;
@@ -335,7 +339,13 @@
     }
     .user-comment {
         padding-bottom: 0;
-        padding-top: 45px;
+        padding-top: 20px;
+    }
+    .user-photos {
+        margin-top: 45px;
+    }
+    .other-photo {
+        gap: 15px;
     }
     .rating {
         font-size: 28px;
@@ -428,10 +438,13 @@
         width: 100%;
         font-size: 16px;
     }
+    .certificates a p {
+        font-size: 14px;
+    }
 
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 220px) {
 
     .title, .news-title {
         font-size: 18px;
@@ -488,8 +501,6 @@
         padding-bottom: 0;
     }
     .small-photo, .small-video {
-        width: 100%;
-        height: auto;
         max-width: 50px;
         max-height: 50px;
     }
@@ -499,8 +510,8 @@
     .mobile-block-title,.footer-mobile, .buttonLenguage, .m-select, #burger-menu_nav.active, .catalog, .catalog-burger-items,
     .porod-numb, .numb-review,
     .mobile-desc-container.active, .mobile-character-container.active, .mobile-certif-container.active,
-    .mobile-extraInfo-container.active, .mobile-review-container.active, .review-Button, .user-comment, .comment-username, .modal-button, .all-backm
-    .one-news-date {
+    .mobile-extraInfo-container.active, .mobile-review-container.active, .review-Button, .user-comment, .comment-username, .modal-button, .all-back,
+    .one-news-date, .block-news, .contact-info {
         font-size: 14px;
     }
     .bread-crumbs {
@@ -519,6 +530,9 @@
     }
     .all-news-link {
         font-size: 12px;
+    }
+    .certificates a p {
+        font-size: 14px;
     }
 
 }

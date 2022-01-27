@@ -5,10 +5,14 @@
     <title>Садовый интсрумент</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href = "static/index.css" rel = "stylesheet">
-    <link type="text/css" href = "static/product/product.css" rel = "stylesheet">
+    <link type="text/css" href = "static/product.css" rel = "stylesheet">
     <link type="text/css" href = "static/adaptability.css" rel = "stylesheet">
     <link type="text/css" href = "static/adaptability-content.css" rel = "stylesheet">
     <link type="text/css" href = "static/feedback.css" rel = "stylesheet">
+
+
+    <link type="text/css" rel="stylesheet" href="node_modules/lightgallery/css/lightgallery.css" />
+    <!-- lightgallery plugins -->
 
 
 
@@ -290,7 +294,7 @@
 
                         <div class="other-photo">
 
-                            <img class="small-photo" src="static/lopata.jpg" alt="small-photo">
+                            <img class="small-photo" src="static/cat.jpg" alt="small-photo">
                             <img class="small-photo" src="static/product/good-min2.jpg" alt="small-photo">
                             <img class="small-photo" src="static/product/good-min3.jpg" alt="small-photo">
                             <img class="small-photo" src="static/lopata.jpg" alt="small-photo">
@@ -341,7 +345,7 @@
                     </div>
                 </div>
 
-                <!--    ************************************************** ОПИСАНИЕ, ХАРАКТЕРИСТИКИ, ОТЗЫВЫ -->
+<!--                    ************************************************** ОПИСАНИЕ, ХАРАКТЕРИСТИКИ, ОТЗЫВЫ -->
                 <div class="info-block">
                     <div class="info-block-titles">
                         <div class="info-block-title-desc" onclick="selectDesc()">
@@ -413,8 +417,8 @@
                     </div>
 
 
-    <!--                ********************************************************* Раздел БЛОК ОТЗЫВОВ-->
-                        <div class="product-info-review">
+<!--                    ********************************************************* Раздел БЛОК ОТЗЫВОВ-->
+                     <div class="product-info-review">
                             <div class="product-info-title">
                                 Отзывы <span class="countOfReview">(5)</span>
                             </div>
@@ -429,13 +433,40 @@
                                             <img class="rating-star" src="static/product/star.svg" alt="star">
                                         </div>
                                         <div class="rating-text">
-                                            На основе 5 оценок
+                                            <p>На основе 5 оценок</p>
                                         </div>
                                     </div>
                                     <button class="review-Button" type="submit" onclick="openReview()">Оставить отзыв</button>
                                 </div>
 
                                 <div class="user-comments">
+                                    <div class="user-photos">
+                                        <div class="comment-username">
+                                            Фото покупателей
+                                        </div>
+
+                                        <div class="user-gallery other-photo">
+                                            <a href="static/lopata.jpg" >
+                                                <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                            </a>
+                                            <a href="static/lopata.jpg" >
+                                                <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                            </a>
+                                            <a href="static/lopata.jpg">
+                                                <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                            </a>
+                                            <a href="static/lopata.jpg" >
+                                                <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                            </a>
+                                            <a href="static/lopata.jpg" >
+                                                <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                            </a>
+                                            <a href="static/lopata.jpg">
+                                                <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                            </a>
+                                        </div>
+                                    </div>
+
                                     <div class="user-comment">
                                         <div class="comment-info">
                                             <div class="rating-block-2">
@@ -475,13 +506,90 @@
                                             <div class="comment-text">
                                                 Минусы: л данную лопату, так о прослужит долго.
                                             </div>
+
+                                            <div class="user-gallery other-photo">
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg">
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg">
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                            </div>
                                         </div>
 
-                                        <div class="user-comment-photos">
-                                            <img  class="user-comment-photo" src="static/lopata.jpg" alt="small-photo">
-                                            <img  class="user-comment-photo" src="static/product/good-min2.jpg" alt="small-photo">
-                                            <img  class="user-comment-photo" src="static/product/good-min3.jpg" alt="small-photo">
-                                            <img  class="user-comment-photo" src="static/lopata.jpg" alt="small-photo">
+                                    </div>
+                                    <div class="user-comment">
+                                        <div class="comment-info">
+                                            <div class="rating-block-2">
+                                                <div class="comment-username">
+                                                    Руслан
+                                                </div>
+                                                <div class="comment-rating">
+                                                    <div class="box_star none-rating">
+                                                        <div class="rating rating_set">
+                                                            <div class="rating_body">
+                                                                <div class="rating_active"></div>
+                                                                <div class="rating_items">
+                                                                    <input type="radio" class="rating_item " value="1" name="rating">
+                                                                    <input type="radio" class="rating_item " value="2" name="rating">
+                                                                    <input type="radio" class="rating_item " value="3" name="rating">
+                                                                    <input type="radio" class="rating_item " value="4" name="rating">
+                                                                    <input type="radio" class="rating_item " value="5" name="rating">
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating_value">{{avg_comment}}</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-date">
+                                                3 января 2021
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-text-block">
+                                            <div class="comment-text">
+                                                С инструментом данного бренда знаком давно, поэтому и приобрел данную лопату, так сказать по старой дружбе. После непродолжительной работы по перекопке целины, оторвался метал в месте сварного шва, где соединяется черенок с лопатой, вот лежит она уже год и не знаю что с ней делать, попробовать заварить или в металлолом сдать. В целом если земля не плотная и сильно не нагружать то прослужит долго.
+                                            </div>
+                                            <div class="comment-text">
+                                                Плюсы: л данную лопату, так о прослужит долго.
+                                            </div>
+                                            <div class="comment-text">
+                                                Минусы: л данную лопату, так о прослужит долго.
+                                            </div>
+
+                                            <div class="user-gallery other-photo">
+                                                <a href="static/cat.jpg" >
+                                                    <img class="small-photo" src="static/cat.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg">
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg">
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -494,8 +602,8 @@
 
                 <div class="info-block-mobile">
                     <div>
-                        <div class="asideElement"onclick="descSelect()">
-                            <div class="mobile-block-title">
+                        <div class="asideElement not-padding">
+                            <div class="mobile-block-title" onclick="descSelect()">
                                 <p>
                                     Описание
                                 </p>
@@ -508,8 +616,8 @@
                             </div>
                         </div>
 
-                        <div class="asideElement" onclick="characterSelect()">
-                            <div class="mobile-block-title" >
+                        <div class="asideElement not-padding" >
+                            <div class="mobile-block-title" onclick="characterSelect()">
                                 <p>
                                     Характеристики
                                 </p>
@@ -529,8 +637,8 @@
                             </div>
                         </div>
 
-                        <div class="asideElement" onclick="certifSelect()">
-                            <div class="mobile-block-title" >
+                        <div class="asideElement not-padding">
+                            <div class="mobile-block-title" onclick="certifSelect()" >
                                 <p>
                                     Сертификаты
                                 </p>
@@ -544,8 +652,8 @@
                             </div>
                         </div>
 
-                        <div class="asideElement" onclick="extraInfoSelect()">
-                            <div class="mobile-block-title">
+                        <div class="asideElement not-padding" >
+                            <div class="mobile-block-title" onclick="extraInfoSelect()">
                                 <p>
                                     Доп. Информация
                                 </p>
@@ -558,8 +666,8 @@
                             </div>
                         </div>
 
-                        <div class="asideElement" onclick="reviewSelect()">
-                            <div class="mobile-block-title" >
+                        <div class="asideElement not-padding">
+                            <div class="mobile-block-title" onclick="reviewSelect()">
                                 <p>
                                     Отзывы
                                 </p>
@@ -572,59 +680,176 @@
                                         <p>4</p>
                                     </div>
                                     <div class="rating-text">
-                                        На основе 5 оценок
+                                        <p>На основе 5 оценок</p>
                                     </div>
                                 </div>
                                 <button class="review-Button" type="submit" onclick="openReview()" >Оставить отзыв</button>
                                 <div class="user-comments">
-                                    <div class="user-comment">
-                                        <div class="comment-info">
+                                    <div class="user-comments">
+                                        <div class="user-photos">
                                             <div class="comment-username">
-                                                <p>Руслан</p>
+                                                Фото покупателей
                                             </div>
-                                            <div class="rating-block-2">
-                                                <div class="comment-rating">
-                                                    <div class="box_star none-rating">
-                                                        <div class="rating rating_set">
-                                                            <div class="rating_body">
-                                                                <div class="rating_active"></div>
-                                                                <div class="rating_items">
-                                                                    <input type="radio" class="rating_item " value="1" name="rating">
-                                                                    <input type="radio" class="rating_item " value="2" name="rating">
-                                                                    <input type="radio" class="rating_item " value="3" name="rating">
-                                                                    <input type="radio" class="rating_item " value="4" name="rating">
-                                                                    <input type="radio" class="rating_item " value="5" name="rating">
+
+                                            <div class="user-gallery other-photo">
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg">
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg" >
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                                <a href="static/lopata.jpg">
+                                                    <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="user-comment">
+                                            <div class="comment-info">
+                                                <div class="rating-block-2">
+                                                    <div class="comment-username">
+                                                        Руслан
+                                                    </div>
+                                                    <div class="comment-rating">
+                                                        <div class="box_star none-rating">
+                                                            <div class="rating rating_set">
+                                                                <div class="rating_body">
+                                                                    <div class="rating_active"></div>
+                                                                    <div class="rating_items">
+                                                                        <input type="radio" class="rating_item " value="1" name="rating">
+                                                                        <input type="radio" class="rating_item " value="2" name="rating">
+                                                                        <input type="radio" class="rating_item " value="3" name="rating">
+                                                                        <input type="radio" class="rating_item " value="4" name="rating">
+                                                                        <input type="radio" class="rating_item " value="5" name="rating">
+                                                                    </div>
                                                                 </div>
+                                                                <div class="rating_value">{{avg_comment}}</div>
                                                             </div>
-                                                            <div class="rating_value">{{avg_comment}}</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="comment-date">
-                                                    <p>3 января 2021</p>
+                                                    3 января 2021
+                                                </div>
+                                            </div>
+
+                                            <div class="comment-text-block">
+                                                <div class="comment-text">
+                                                    С инструментом данного бренда знаком давно, поэтому и приобрел данную лопату, так сказать по старой дружбе. После непродолжительной работы по перекопке целины, оторвался метал в месте сварного шва, где соединяется черенок с лопатой, вот лежит она уже год и не знаю что с ней делать, попробовать заварить или в металлолом сдать. В целом если земля не плотная и сильно не нагружать то прослужит долго.
+                                                </div>
+                                                <div class="comment-text">
+                                                    Плюсы: л данную лопату, так о прослужит долго.
+                                                </div>
+                                                <div class="comment-text">
+                                                    Минусы: л данную лопату, так о прослужит долго.
+                                                </div>
+
+                                                <div class="user-gallery other-photo">
+                                                    <a href="static/lopata.jpg" >
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                    <a href="static/lopata.jpg" >
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                    <a href="static/lopata.jpg">
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                    <a href="static/lopata.jpg" >
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                    <a href="static/lopata.jpg" >
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                    <a href="static/lopata.jpg">
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div class="comment-text-block">
-                                            <div class="comment-text">
-                                                С инструментом данного бренда знаком давно, поэтому и приобрел данную лопату, так сказать по старой дружбе. После непродолжительной работы по перекопке целины, оторвался метал в месте сварного шва, где соединяется черенок с лопатой, вот лежит она уже год и не знаю что с ней делать, попробовать заварить или в металлолом сдать. В целом если земля не плотная и сильно не нагружать то прослужит долго.
+                                        <div class="user-comment">
+                                            <div class="comment-info">
+                                                <div class="rating-block-2">
+                                                    <div class="comment-username">
+                                                        Руслан
+                                                    </div>
+                                                    <div class="comment-rating">
+                                                        <div class="box_star none-rating">
+                                                            <div class="rating rating_set">
+                                                                <div class="rating_body">
+                                                                    <div class="rating_active"></div>
+                                                                    <div class="rating_items">
+                                                                        <input type="radio" class="rating_item " value="1" name="rating">
+                                                                        <input type="radio" class="rating_item " value="2" name="rating">
+                                                                        <input type="radio" class="rating_item " value="3" name="rating">
+                                                                        <input type="radio" class="rating_item " value="4" name="rating">
+                                                                        <input type="radio" class="rating_item " value="5" name="rating">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rating_value">{{avg_comment}}</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-date">
+                                                    3 января 2021
+                                                </div>
                                             </div>
-                                            <div class="comment-text">
-                                                Плюсы: л данную лопату, так о прослужит долго.
-                                            </div>
-                                            <div class="comment-text">
-                                                Минусы: л данную лопату, так о прослужит долго.
-                                            </div>
-                                        </div>
 
+                                            <div class="comment-text-block">
+                                                <div class="comment-text">
+                                                    С инструментом данного бренда знаком давно, поэтому и приобрел данную лопату, так сказать по старой дружбе. После непродолжительной работы по перекопке целины, оторвался метал в месте сварного шва, где соединяется черенок с лопатой, вот лежит она уже год и не знаю что с ней делать, попробовать заварить или в металлолом сдать. В целом если земля не плотная и сильно не нагружать то прослужит долго.
+                                                </div>
+                                                <div class="comment-text">
+                                                    Плюсы: л данную лопату, так о прослужит долго.
+                                                </div>
+                                                <div class="comment-text">
+                                                    Минусы: л данную лопату, так о прослужит долго.
+                                                </div>
+
+                                                <div class="user-gallery other-photo">
+                                                    <a href="static/cat.jpg" >
+                                                        <img class="small-photo" src="static/cat.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                    <a href="static/lopata.jpg" >
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                    <a href="static/lopata.jpg">
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                    <a href="static/lopata.jpg" >
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                    <a href="static/lopata.jpg" >
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                    <a href="static/lopata.jpg">
+                                                        <img class="small-photo" src="static/lopata.jpg" alt="text user's comment"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
+
                                 </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
 
 
                 <div class="modal">
@@ -937,8 +1162,38 @@
 </footer>
 </div>
 
+<script src="node_modules/lightgallery/lightgallery.min.js"></script>
+<!-- lightgallery plugins -->
+
+<!--<script>-->
+<!--    lightGallery(document.querySelector('.user-gallery'), {-->
+<!--            thumbnail:true,-->
+<!--            animateThumb: true,-->
+<!--            zoomFromOrigin: true,-->
+<!--            allowMediaOverlap: true,-->
+<!--            toggleThumb: true,-->
+<!--            enableSwipe: true,-->
+<!--            escKey: true,-->
+<!--            getCaptionFromTitleOrAlt: true,-->
+<!--            startAnimationDuration: 400,-->
+<!--            startClass: "lg-start-zoom",-->
+<!--        }-->
+<!--    );-->
+<!--</script>-->
+
+<script>
+    let lg = document.querySelectorAll( '.user-gallery');
+    for ( let i = 0; i < lg.length; i++ ) {
+        lightGallery( lg[i], {
+            thumbnail:true,
+        });
+    }
+</script>
+
 <script src="static/product/product.js"></script>
 <script src="static/rating.js"></script>
 <script src="static/index.js"></script>
+
+
 </body>
 </html>

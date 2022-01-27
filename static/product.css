@@ -33,7 +33,7 @@
 }
 .other-photo {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: auto;
     width: 100%;
     flex-wrap: nowrap;
@@ -54,6 +54,7 @@
 .main-photo.none {
     display: none;
 }
+
 .small-photo {
     box-sizing: content-box;
     height: 100px;
@@ -249,6 +250,9 @@
     font-size: 24px;
     color: #343434;
 }
+.not-padding {
+    padding: 0;
+}
 .product-info-description, .product-info-character, .product-info-certif, .product-info-extraInfo {
     font-size: 16px;
    font-weight: 400;
@@ -282,7 +286,6 @@
 .rating-text{
     font-size: 16px;
     font-weight: 400;
-    width: max-content;
     margin-bottom: 15px;
 }
 .countOfReview {
@@ -333,6 +336,7 @@
 
 /*8*************************************************** комментарии пользователя*/
 .user-comments {
+    overflow: hidden;
     width: 70%;
 }
 .user-comment {
@@ -660,3 +664,22 @@
     max-width: 120px;
     height: auto;
 }
+
+
+.user-gallery {
+}
+
+.user-gallery a {
+
+}
+.user-gallery a img {
+}
+
+
+.user-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
