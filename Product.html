@@ -916,13 +916,13 @@
                                         </div>
 
                                         <div class="page-3">
-                                            <div class="file-wrapper">
-                                                <input multiple name="user-file" type="file" id="upload-file__input_1">
-                                                <label class="upload-file__label" for="upload-file__input_1">
-                                                    <img class="send-file-img" src="static/product/send-file.svg" alt="send file">
-                                                    <span class="porod-numb">Для загрузки изображения нажмите на иконку</span>
-                                                </label>
+                                            <div id="drop-area">
+                                                <label class="sendFile-button" for="fileElem"><img class="sendFile-button-img" src="static/send-file.svg" alt="send file"></label>
+                                                <p class="sendFile-text">Для загрузки изображения нажмите на икон ку или перетащите его в это поле</p>
+                                                <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                                                <div id="sendFile-gallery"></div>
                                             </div>
+<!--                                            <div class="sendFile-clean all-back remove" onclick="deleteFile()">Очистить</div>-->
                                         </div>
 
                                         <div class="page-4">
@@ -930,7 +930,6 @@
                                             <input type="email" placeholder="Электронная почта *" class="reg-form_name" required>
                                             <button class="next-4 modal-button" onclick="sendForm()">Отправить</button>
                                         </div>
-
 
                                     </form>
 
@@ -946,7 +945,7 @@
                                 </div>
 
                                 <div class="page-5">
-                                    <p>Ваш отзыв отправлен</p>
+                                    <p class="porod-numb">Спасибо за отзыв! Ваш комментарий отправлен на модерацию.</p>
                                 </div>
                             </div>
 
@@ -1193,6 +1192,7 @@
 <script src="static/product/product.js"></script>
 <script src="static/rating.js"></script>
 <script src="static/index.js"></script>
+<script src="static/send-file.js"></script>
 
 
 </body>
