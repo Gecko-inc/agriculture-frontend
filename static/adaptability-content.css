@@ -444,9 +444,6 @@
     .sendFile-text {
         font-size: 14px;
     }
-    #sendFile-gallery {
-        grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
-    }
     #sendFile-gallery img {
         width: 120px;
     }

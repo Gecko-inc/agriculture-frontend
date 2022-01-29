@@ -704,9 +704,11 @@
 
 #sendFile-gallery {
     width: 100%;
-    gap: 5px;
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
 }
 #sendFile-gallery img {
     justify-self: center;
