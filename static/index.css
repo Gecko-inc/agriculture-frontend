@@ -588,3 +588,30 @@ footer{
 .certificates a img:hover {
     transform: scale(1.005);
 }
+
+.site-feedback{
+
+}
+.site-feedback-link {
+    cursor: pointer;
+    height: 160px;
+    background: #4FAE3C;
+    font-size: 14px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    display: flex;
+    font-weight: 400;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    position: fixed;
+    top: 60%;
+    right: 0;
+    writing-mode: tb-rl;
+    transform:rotate(180deg);
+}
+
+.site-feedback-link:hover {
+    background: rgba(79, 174, 60, 0.86);
+}

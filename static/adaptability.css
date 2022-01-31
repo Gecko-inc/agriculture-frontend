@@ -298,4 +298,11 @@
     .page-4.active {
         width: 100%;
     }
+
+    .site-feedback-link {
+        font-size: 12px;
+        width: 30px;
+        height: 120px;
+        top: 55%;
+    }
 }
