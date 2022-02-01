@@ -5,7 +5,7 @@ html,body,div,p,h1,header,nav,aside,footer,a,ul,li,input,form{
 }
 
 html {
-    scroll-padding-top: 90px;
+    scroll-padding-top: 89px;
 }
 
 a{
@@ -183,6 +183,7 @@ header {
     gap: 30px;
 }
 .product {
+    opacity: 0.7;
     cursor: pointer;
     border: 1px solid #E5E5E5;
     padding: 5% 5% 5% 5%;
@@ -362,7 +363,6 @@ header {
     padding-top: 0;
 }
 .asideElement {
-    cursor: pointer;
     padding: 20px 0;
     border-bottom: 1.5px solid #6C786A;
     width: 80%;
@@ -370,6 +370,10 @@ header {
     flex-direction: column;
     justify-content: space-between;
 }
+.aside-link, .catalog-item {
+    cursor: pointer;
+}
+
 
 .catalog-items.catalog-active{
     display: none;
@@ -614,4 +618,9 @@ footer{
 
 .site-feedback-link:hover {
     background: rgba(79, 174, 60, 0.86);
+}
+
+.active-product {
+    border: 1px solid rgba(79, 174, 60, 0.59);
+    opacity: 1;
 }
