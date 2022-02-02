@@ -57,19 +57,9 @@ function previewFile(file) {
     }
 }
 
-// let file = document.querySelector('.sendFile-gallery');
-//     let removeBtn = document.querySelector('.remove');
-//
-// removeBtn.addEventListener('click', function () {
-//
-//     document.getElementById("#fileElem").value = "";
-//     document.querySelector(".sendFile-gallery").value = "";
-//
-//     });
-//
-// function deleteFile() {
-//     document.getElementById("#fileElem").value = "";
-//     document.getElementById("#sendFile-gallery").value = "";
-//     document.getElementById('sendFile-gallery').removeChild(img);
-//     document.getElementById('sendFile-gallery').disabled='disabled';
-// }
+document.querySelector('.sendFile-clean').addEventListener('click', function(){
+    console.log(fileElem.value)
+    fileElem.value = ""
+    console.log(fileElem.value)
+    document.querySelector('#sendFile-gallery').innerHTML = ''
+})
